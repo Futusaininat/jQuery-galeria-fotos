@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("form").on('submit', function (e) {
         e.preventDefault()
         const enderecoDaNovaImagem = $('#endereco-imagem-nova').val()
-        const novoItem = $('<li syle="display: none"><li>')
+        const novoItem = $('<li syle="display: none"></li>')
         $(`<img src="${enderecoDaNovaImagem}">`).appendTo(novoItem)
         $(`
         <div class="overlay-imagem-link">
